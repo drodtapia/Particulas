@@ -21,12 +21,30 @@ $$\begin{matrix}
 donde $N$ es el numero total de partıculas, $E_{ni}$ es el campo electrico en la componente
 $i = x, y, z$ y $B_{ni}$ es el campo magnetico en la componente $i = x, y, z$. El valor de $N$ sera
 arbitrario para cualquier conjunto de datos.
+## Instrucciones de Uso
+- El proyecto incluye un archivo Makefile para facilitar la compilación del programa.
+- Asegúrate de que el directorio de fuente contenga todos los archivos del repositorio para compilar el programa.
+
+## Funcionalidades del Makefile:
+El Makefile proporciona las siguientes funcionalidades adicionales:
+run: Para ejecutar el programa una vez compilado
+```bash
+make run
+```
+clean: Sirve para borrar los archivos con extensión .o y extensión .~
+```bash
+make clean
+```
+borra: Abarca un poco más que clean, solo que ahora además borra los .dat, png y .exe
+```bash
+make run
+```
 ### Compilación:
-- Asegúrate de tener un compilador de C++ y la herramienta make instalada en tu sistema.
-- Abre una terminal en el directorio donde se encuentran los archivos del repositorio.
+- Abre una terminal en el directorio donde se encuentra los archivo del repositorio.
 - Compila el programa utilizando el siguiente comando:
 ```bash
   make
+
 ```
 ### Ejecución:
 Una vez compilado, ejecute el siguiente comando y siga las instrucciones proporcionadas en pantalla
