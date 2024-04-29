@@ -7,19 +7,29 @@ $$\vec{r}_n(t,n)= \frac{2\pi t}{n}\cos^5(nt)\sin^3(\cos(t/n))\hat{x}+3n\pi t\cos
 y determinar el modulo de la  **Velocidad** y **Fuerza de Lorentz** más alta y más baja dentro de este conjunto.
 donde $n \geq 1$ representa la partıcula n-esima. El numero de partıculas lo leera de la
 primera lınea de un archivo de la forma,
+
 $$\begin{matrix}
- N& & &  &  &  & \\ 
-\end{matrix}\\
-\begin{matrix}
+ N  & & &  &  &  &  & &&&&&&&&
+\end{matrix}\\$$
+
+$$\begin{matrix}
  &Q_1& E_{1x} &E_{1y}  &E_{1z}  &B_{1x}  &B_{1y}  &B_{1z} \\ 
 &\vdots &\vdots  &\vdots  &\vdots  &\vdots  & \vdots & \vdots\\ 
 &Q_n& E_{nx} &E_{ny}  &E_{nz}  &B_{nx}  &B_{ny}  &B_{nz}& 
 \end{matrix}$$
+
 donde $N$ es el numero total de partıculas, $E_{ni}$ es el campo electrico en la componente
 $i = x, y, z$ y $B_{ni}$ es el campo magnetico en la componente $i = x, y, z$. El valor de $N$ sera
 arbitrario para cualquier conjunto de datos.
+### Compilación:
+- Asegúrate de tener un compilador de C++ y la herramienta make instalada en tu sistema.
+- Abre una terminal en el directorio donde se encuentran los archivos del repositorio.
+- Compila el programa utilizando el siguiente comando:
+```bash
+  make
+```
 ### Ejecución:
-Una vez compilado, ejecuta el programa proporcionando y siga las instrucciones proporcionadas en pantalla
+Una vez compilado, ejecute el siguiente comando y siga las instrucciones proporcionadas en pantalla
 ```bash
   make run
 ```  
@@ -28,7 +38,6 @@ Una vez compilado, ejecuta el programa proporcionando y siga las instrucciones p
 - Make: Necesitarás tener la herramienta make instalada en tu sistema para poder utilizar el archivo Makefile y compilar tu proyecto.
 
 ### Ejemplos y Demostraciones:
-Una vez compilado, ejecuta el programa proporcionando y siga las instrucciones proporcionadas en pantalla. 
 A continuación se muestra un ejemplo del programa:
 ```bash
 $ make run
